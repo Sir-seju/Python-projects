@@ -1,2 +1,3 @@
-# Tic-Tac-Toe Game
- a python program for the Tic-Tac-Toe game
+# Python projects
+
+A couple of programs i created when learning the python programming language
