@@ -22,7 +22,7 @@ def pi_generator(n, x=0):
         a = 1000
         while n > 1000:
             r = requests.get(
-                f"http://api.pi.delivery/v1/pi?start={x}&numberOfDigits={a}"
+                f"https://api.pi.delivery/v1/pi?start={x}&numberOfDigits={a}"
             )
             if not r.ok:
                 print("Sorry! Server down! Please try again later")
