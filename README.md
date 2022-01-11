@@ -6,7 +6,7 @@ They include;
 
 <ol>
   <li> A simple autocomplete webapp using Flask</li>
-  <li>A Pi decimal generator program that uses the request module to perform GETs on an API that can generate Pi to A trillion decimals </li>
+  <li>A Pi decimal generator program that uses the request module to perform GETs to an API that can generate Pi to A trillion decimals </li>
   <li>My Favorite game BLACKJACK: a program that lets you play the blackjack game on your terminal</li>
   <li>A program for parsing through filenames and renaming file using the OS module</li>
   <li>A TicTacToe game played on the terminal</li>
