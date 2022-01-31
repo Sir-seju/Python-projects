@@ -1,0 +1,33 @@
+---
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - "8080:8080"
+    networks:
+      - jenkins
+    volumes:
+      - "~/Desktop/devops/jenkins/jenkins-data:/var/jenkins_home"
+  db:
+    container_name: db
+    image: mysql:latest
+    ports:
+      - "6603:3306"
+    volumes:
+      - "$PWD/db_data:/var/lib/mysql"
+    env_file:
+      - ./.env
+    networks:
+      - jenkins
+  web:
+    build:
+      context: server
+    container_name: web
+    image: web-server
+    ports:
+      - "80:80"
+    networks:
+      - jenkins
+networks:
+  jenkins:
